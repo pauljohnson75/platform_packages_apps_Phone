@@ -291,7 +291,7 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
 	}
 	mPhone.setPreferredNetworkType(network,
 		mMainThreadHandler.obtainMessage(CMD_TOGGLE_LTE));
-	Settings.Secure.putInt(mApp.getContentResolver();
+	Settings.Secure.putInt(mApp.getContentResolver(),
 		Settings.Secure.PREFERRED_NETWORK_MODE, network);
      }
 
